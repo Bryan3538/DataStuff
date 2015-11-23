@@ -1,0 +1,44 @@
+{
+  "Employees" : [
+    {
+      "ID" : 1,
+      "FirstName" : "Luke",
+      "LastName" : "Skywalker",
+      "DepartmentNumber" : 1,
+      "LocationID" : 1
+    },
+    {
+      "ID" : 2,
+      "FirstName" : "Darth",
+      "LastName" : "Vader",
+      "DepartmentNumber" : 1,
+      "LocationID" : 1
+    },
+    {
+      "ID" : "malformed",
+      "FirstName" : "This JSON",
+      "LastName" : "Won't read",
+      "DepartmentNumber" : 1,
+      "LocationID" : 1
+    },
+    {
+      "ID" : 3,
+      "FirstName" : "Han",
+      "LastName" : "Solo",
+      "DepartmentNumber" : "chicken",
+      "LocationID" : "gocluckcluck"
+    },
+    {
+      "ID" : 3,
+      "LastName" : "Solo",
+      "DepartmentNumber" : "chicken",
+      "LocationID" : "gocluckcluck"
+    },
+    {
+      "ID" : 3,
+      "FirstName" : "Han",
+      "DepartmentNumber" : "chicken",
+      "LocationID" : "gocluckcluck"
+    }
+  ]
+}

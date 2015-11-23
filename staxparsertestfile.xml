@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Employees>
+	<Employee id="1">
+		<FirstName>Luke</FirstName>
+		<LastName>Skywalker</LastName>
+		<DepartmentNumber>1</DepartmentNumber>
+		<LocationID>1</LocationID>
+	</Employee>
+	<Employee id="2">
+		<FirstName>Darth</FirstName>
+		<LastName>Vader</LastName>
+		<DepartmentNumber>1</DepartmentNumber>
+		<LocationID>1</LocationID>
+	</Employee>
+	<Employee id="malformed">
+		<FirstName>This XML</FirstName>
+		<LastName>Won't read</LastName>
+		<DepartmentNumber>1</DepartmentNumber>
+		<LocationID>1</LocationID>
+	</Employee>
+	<Employee id="3">
+		<FirstName>Han</FirstName>
+		<LastName>Solo</LastName>
+		<DepartmentNumber>chicken</DepartmentNumber>
+		<LocationID>gocluckcluck</LocationID>
+	</Employee>
+</Employees>
