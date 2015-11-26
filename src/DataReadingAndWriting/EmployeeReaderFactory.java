@@ -1,6 +1,7 @@
 package DataReadingAndWriting;
 
 import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by Bryan on 11/18/2015.
@@ -13,12 +14,19 @@ public class EmployeeReaderFactory {
     public static final int JSONOBJ = 4;
     public static final int JSONSTR = 5;
 
-    //this was supposed to eventually evaluate the size of the file to determine the more efficient parser
-    public static EmployeeReader newInstance(File infile) {
-        return null;
+
+    public static EmployeeReader newInstance(File infile) throws IOException {
+
+        if(infile.getAbsolutePath().endsWith(".xml")) {
+            return new EmployeeStaxParser();
+        } else if(infile.getAbsolutePath().endsWith(".json")) {
+            return new EmployeeJsonStreamParser();
+        } else {
+            throw new IOException("Only files of the following type are accepted: { .xml, .json }");
+        }
     }
 
-    public static EmployeeReader newInstance(String infilePath) {
+    public static EmployeeReader newInstance(String infilePath) throws IOException {
         File infile = new File(infilePath);
         return newInstance(infile);
     }
